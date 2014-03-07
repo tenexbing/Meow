@@ -18,13 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//    1234567890
-    //yyyyy
-<<<<<<< HEAD
-//    333333333
-=======
-    //bbbb
->>>>>>> FETCH_HEAD
+    //bnininininnini
 }
 
 - (void)didReceiveMemoryWarning
