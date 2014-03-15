@@ -10,9 +10,14 @@
 		010DFF9B18CF51190046A975 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010DFF9A18CF51190046A975 /* MainViewController.m */; };
 		010DFF9D18CF552D0046A975 /* z01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010DFF9C18CF552D0046A975 /* z01.jpg */; };
 		010DFFA018CF5CDC0046A975 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 010DFF9F18CF5CDC0046A975 /* MainTableViewCell.m */; };
+		019F332718D487AD0011119A /* z02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 019F332518D487AD0011119A /* z02.jpg */; };
+		019F332818D487AD0011119A /* z03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 019F332618D487AD0011119A /* z03.jpg */; };
+		019F332B18D48B410011119A /* z04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 019F332918D48B410011119A /* z04.jpg */; };
+		019F332C18D48B410011119A /* z05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 019F332A18D48B410011119A /* z05.jpg */; };
 		01C7192718D0C4DD001C6B0A /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7192618D0C4DD001C6B0A /* FavoriteViewController.m */; };
 		01C7192A18D0C67A001C6B0A /* FavoriteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7192918D0C67A001C6B0A /* FavoriteCollectionViewCell.m */; };
 		01C7193018D0CD4D001C6B0A /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7192F18D0CD4D001C6B0A /* MoreTableViewController.m */; };
+		01EDC6F018D41C7800A03C4A /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EDC6EF18D41C7800A03C4A /* ContentViewController.m */; };
 		01F0A17418C9798A000691A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0A17318C9798A000691A1 /* Foundation.framework */; };
 		01F0A17618C9798A000691A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0A17518C9798A000691A1 /* CoreGraphics.framework */; };
 		01F0A17818C9798A000691A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0A17718C9798A000691A1 /* UIKit.framework */; };
@@ -45,12 +50,18 @@
 		010DFF9C18CF552D0046A975 /* z01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z01.jpg; sourceTree = "<group>"; };
 		010DFF9E18CF5CDC0046A975 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		010DFF9F18CF5CDC0046A975 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		019F332518D487AD0011119A /* z02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z02.jpg; sourceTree = "<group>"; };
+		019F332618D487AD0011119A /* z03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z03.jpg; sourceTree = "<group>"; };
+		019F332918D48B410011119A /* z04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z04.jpg; sourceTree = "<group>"; };
+		019F332A18D48B410011119A /* z05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z05.jpg; sourceTree = "<group>"; };
 		01C7192518D0C4DD001C6B0A /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
 		01C7192618D0C4DD001C6B0A /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 		01C7192818D0C67A001C6B0A /* FavoriteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteCollectionViewCell.h; sourceTree = "<group>"; };
 		01C7192918D0C67A001C6B0A /* FavoriteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteCollectionViewCell.m; sourceTree = "<group>"; };
 		01C7192E18D0CD4D001C6B0A /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewController.h; sourceTree = "<group>"; };
 		01C7192F18D0CD4D001C6B0A /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewController.m; sourceTree = "<group>"; };
+		01EDC6EE18D41C7800A03C4A /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		01EDC6EF18D41C7800A03C4A /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		01F0A17018C9798A000691A1 /* Meow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F0A17318C9798A000691A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01F0A17518C9798A000691A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +143,8 @@
 			children = (
 				01F0A18218C9798A000691A1 /* AppDelegate.h */,
 				01F0A18318C9798A000691A1 /* AppDelegate.m */,
+				01EDC6EE18D41C7800A03C4A /* ContentViewController.h */,
+				01EDC6EF18D41C7800A03C4A /* ContentViewController.m */,
 				01C7192518D0C4DD001C6B0A /* FavoriteViewController.h */,
 				01C7192618D0C4DD001C6B0A /* FavoriteViewController.m */,
 				01C7192818D0C67A001C6B0A /* FavoriteCollectionViewCell.h */,
@@ -182,6 +195,10 @@
 		01F0A1AA18C97B02000691A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				019F332518D487AD0011119A /* z02.jpg */,
+				019F332618D487AD0011119A /* z03.jpg */,
+				019F332918D48B410011119A /* z04.jpg */,
+				019F332A18D48B410011119A /* z05.jpg */,
 				010DFF9C18CF552D0046A975 /* z01.jpg */,
 			);
 			path = Resources;
@@ -231,7 +248,7 @@
 		01F0A16818C9798A000691A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = b;
 				TargetAttributes = {
 					01F0A19018C9798A000691A1 = {
@@ -265,7 +282,11 @@
 			files = (
 				01F0A18C18C9798A000691A1 /* Images.xcassets in Resources */,
 				010DFF9D18CF552D0046A975 /* z01.jpg in Resources */,
+				019F332718D487AD0011119A /* z02.jpg in Resources */,
+				019F332818D487AD0011119A /* z03.jpg in Resources */,
 				01F0A17E18C9798A000691A1 /* InfoPlist.strings in Resources */,
+				019F332C18D48B410011119A /* z05.jpg in Resources */,
+				019F332B18D48B410011119A /* z04.jpg in Resources */,
 				01F0A18718C9798A000691A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +310,7 @@
 				01C7192A18D0C67A001C6B0A /* FavoriteCollectionViewCell.m in Sources */,
 				01C7192718D0C4DD001C6B0A /* FavoriteViewController.m in Sources */,
 				01F0A18418C9798A000691A1 /* AppDelegate.m in Sources */,
+				01EDC6F018D41C7800A03C4A /* ContentViewController.m in Sources */,
 				010DFF9B18CF51190046A975 /* MainViewController.m in Sources */,
 				010DFFA018CF5CDC0046A975 /* MainTableViewCell.m in Sources */,
 				01F0A18018C9798A000691A1 /* main.m in Sources */,
@@ -345,7 +367,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -384,7 +405,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -444,7 +464,6 @@
 		01F0A1A618C9798A000691A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Meow.app/Meow";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -467,7 +486,6 @@
 		01F0A1A718C9798A000691A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Meow.app/Meow";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
