@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "MainTableViewCell.h"
-
+#import "ContentViewController.h"
 @interface MainViewController ()
 
 @end
@@ -38,5 +38,6 @@
     
     return cell;
 }
+
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContentViewController : UIViewController<UIScrollViewDelegate>
+@interface ContentViewController : UIViewController<UIScrollViewDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *sclWrap;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
@@ -26,7 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *tvPersonality;
 
-@property (weak, nonatomic) IBOutlet UIButton *btnContact;
+@property (strong, nonatomic) IBOutlet UIButton *btnContact;
 @property (weak, nonatomic) IBOutlet UIButton *btnMedical;
 @property (weak, nonatomic) IBOutlet UIButton *btnMore;
 
@@ -34,5 +34,6 @@
 
 @property (nonatomic, strong) NSArray *bannerArray;
 
+- (IBAction)displayActionSheet:(id)sender;
 
 @end

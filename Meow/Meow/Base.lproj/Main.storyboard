@@ -64,7 +64,7 @@
                                             <outlet property="lblLocation" destination="o2I-9H-Tlg" id="sTN-vV-pre"/>
                                             <outlet property="lblName" destination="KNB-is-fWS" id="giX-af-3Bp"/>
                                             <outlet property="lblSex" destination="BNM-i8-v6x" id="5yq-gH-hr3"/>
-                                            <segue destination="e1Q-JR-QQ0" kind="push" id="Jrw-Sl-iE7"/>
+                                            <segue destination="e1Q-JR-QQ0" kind="push" identifier="showDetail" id="Jrw-Sl-iE7"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -179,13 +179,13 @@
                                             <outlet property="lblLocation" destination="Gus-7F-und" id="Jmg-u6-lov"/>
                                             <outlet property="lblName" destination="cta-WX-dpt" id="Cd2-ud-vCt"/>
                                             <outlet property="lblSex" destination="SmY-5A-X4N" id="xJs-Zd-vHI"/>
-                                            <segue destination="e1Q-JR-QQ0" kind="push" id="m5V-bu-nNm"/>
+                                            <segue destination="e1Q-JR-QQ0" kind="push" identifier="showDetail" id="m5V-bu-nNm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="auU-9y-zcy" id="LHc-qS-UkV"/>
-                                    <outlet property="delegate" destination="auU-9y-zcy" id="MGX-TE-uRV"/>
+                                    <outlet property="dataSource" destination="auU-9y-zcy" id="kC3-88-V7l"/>
+                                    <outlet property="delegate" destination="auU-9y-zcy" id="lUH-EB-1Ic"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -221,17 +221,17 @@
         <!--Content View Controller - Cat's Name-->
         <scene sceneID="c1P-h7-7Uo">
             <objects>
-                <viewController id="e1Q-JR-QQ0" customClass="ContentViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="e1Q-JR-QQ0" customClass="ContentViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vFb-IY-XVt">
-                        <rect key="frame" x="0.0" y="64" width="320" height="541"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="540"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="D82-fa-pdl" userLabel="sclWrap - Scroll View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="541"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="510"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="DsV-YN-xGM" userLabel="contentView - View">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="541"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="ihc-8D-XsF" userLabel="sclBanner - Scroll View">
@@ -297,31 +297,28 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kOn-Zo-pT9" userLabel="btnContact - Button">
-                                                <rect key="frame" x="0.0" y="333" width="320" height="44"/>
+                                                <rect key="frame" x="0.0" y="326" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="聯絡人：王媽媽"/>
+                                                <connections>
+                                                    <action selector="displayActionSheet:" destination="e1Q-JR-QQ0" eventType="touchUpInside" id="QD8-Mx-PA1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bZb-Os-UdP" userLabel="btnMedical - Button">
-                                                <rect key="frame" x="0.0" y="385" width="320" height="44"/>
+                                                <rect key="frame" x="0.0" y="371" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="醫療記錄"/>
+                                                <connections>
+                                                    <segue destination="4xk-9m-Lei" kind="push" id="fFx-ds-6W4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lff-pB-Pz7" userLabel="btnMore - Button">
-                                                <rect key="frame" x="0.0" y="437" width="320" height="44"/>
+                                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="更多說明"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zHV-tC-sO3" userLabel="btnMore - Button">
-                                                <rect key="frame" x="20" y="489" width="280" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.086274512110000007" green="0.49411767719999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
-                                                <state key="normal" title="認養狀態回報">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -344,8 +341,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="654"/>
+                    <size key="freeformSize" width="320" height="604"/>
                     <connections>
                         <outlet property="btnContact" destination="kOn-Zo-pT9" id="5di-l3-xte"/>
                         <outlet property="btnFavorite" destination="LCc-z9-ueB" id="xTi-bS-0tj"/>
@@ -365,7 +363,266 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YpN-uZ-F8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="288"/>
+            <point key="canvasLocation" x="974" y="270"/>
+        </scene>
+        <!--Medical Table View Controller - 醫療記錄-->
+        <scene sceneID="tLm-3r-VRo">
+            <objects>
+                <tableViewController id="4xk-9m-Lei" customClass="MedicalTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="63W-dc-Bm3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="703"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="結紮" id="QGU-Z1-1gs">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3F5-Yt-lHs">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3F5-Yt-lHs" id="klL-s9-sZN">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已結紮" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QNX-Ih-82c">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_checkbox.png" id="ZZB-bS-Wb7">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="預防狀況" id="wpO-MH-9Cq">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uhQ-6f-Cho">
+                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uhQ-6f-Cho" id="fzf-8C-LLe">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三合一疫苗：已施打" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TbH-d0-O8k">
+                                                    <rect key="frame" x="59" y="0.0" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_checkbox.png" id="lf9-s4-ltQ">
+                                                    <rect key="frame" x="20" y="10" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mTG-vW-2ti">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mTG-vW-2ti" id="7jZ-KC-dY4">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五合一疫苗" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hwf-1K-b44">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox.png" id="RJP-sx-qka">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="R0p-jr-bSB">
+                                        <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R0p-jr-bSB" id="ZBP-IT-BwL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="狂犬病疫苗：已施打" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nxE-42-5cG">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked_checkbox.png" id="Vwt-38-koJ">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EV5-Zd-3zU">
+                                        <rect key="frame" x="0.0" y="220" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EV5-Zd-3zU" id="RLw-aQ-m5r">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未驅蟲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QDa-FJ-KnS">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox.png" id="IhQ-Hs-MA0">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="HTi-8J-NEM">
+                                        <rect key="frame" x="0.0" y="264" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HTi-8J-NEM" id="ckB-vL-nhC">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="貓愛滋疫苗" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WMz-rl-MTy">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox.png" id="rV6-O0-W5D">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="oK5-rB-qYW">
+                                        <rect key="frame" x="0.0" y="308" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oK5-rB-qYW" id="B7h-Xp-cF0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心絲蟲疫苗" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fx7-Bo-YiK">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox.png" id="Haz-9L-MhD">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1uV-h3-zgX">
+                                        <rect key="frame" x="0.0" y="352" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1uV-h3-zgX" id="Lop-iE-XyP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="腹膜炎疫苗" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fHI-hA-KFW">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox.png" id="tHf-k8-ip1">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="晶片" id="tmi-c3-2tR">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="RFc-m5-tvT">
+                                        <rect key="frame" x="0.0" y="418" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RFc-m5-tvT" id="ww5-6e-39P">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未植入晶片" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nSt-6K-wEe">
+                                                    <rect key="frame" x="59" y="-1" width="261" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox.png" id="epv-yO-SPW">
+                                                    <rect key="frame" x="20" y="9" width="24" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="補充說明" id="S2T-j7-Jkz">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="221" id="cYB-hT-ZLB">
+                                        <rect key="frame" x="0.0" y="484" width="320" height="221"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cYB-hT-ZLB" id="9pf-73-VOs">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZdQ-r1-lw7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="4xk-9m-Lei" id="Dh9-Oy-jGu"/>
+                            <outlet property="delegate" destination="4xk-9m-Lei" id="Iou-w7-FcM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="醫療記錄" id="6JL-Kr-h38"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="767"/>
+                    <connections>
+                        <outlet property="cellDetails" destination="cYB-hT-ZLB" id="nil-6j-2Vk"/>
+                        <outlet property="imgChip" destination="epv-yO-SPW" id="jLr-Pl-L9R"/>
+                        <outlet property="imgDeworming" destination="IhQ-Hs-MA0" id="bNK-qT-sEZ"/>
+                        <outlet property="imgFIV" destination="rV6-O0-W5D" id="X1I-rX-fKK"/>
+                        <outlet property="imgFive" destination="RJP-sx-qka" id="pjW-6m-x8N"/>
+                        <outlet property="imgHeartworm" destination="Haz-9L-MhD" id="V4P-Dg-MD0"/>
+                        <outlet property="imgLigation" destination="ZZB-bS-Wb7" id="JER-F1-AjG"/>
+                        <outlet property="imgPeritonitis" destination="tHf-k8-ip1" id="mPJ-eS-jea"/>
+                        <outlet property="imgRabies" destination="Vwt-38-koJ" id="PHs-2u-hHR"/>
+                        <outlet property="imgTriple" destination="lf9-s4-ltQ" id="CbH-S1-2Ov"/>
+                        <outlet property="lblChip" destination="nSt-6K-wEe" id="ZxM-xn-iZv"/>
+                        <outlet property="lblDeworming" destination="QDa-FJ-KnS" id="i33-tg-1z2"/>
+                        <outlet property="lblFIV" destination="WMz-rl-MTy" id="irV-VA-2ob"/>
+                        <outlet property="lblFive" destination="Hwf-1K-b44" id="da8-Mq-0f6"/>
+                        <outlet property="lblHeartworm" destination="Fx7-Bo-YiK" id="HIw-Aq-pMl"/>
+                        <outlet property="lblLigation" destination="QNX-Ih-82c" id="cfT-sc-zOE"/>
+                        <outlet property="lblPeritonitis" destination="fHI-hA-KFW" id="auK-JG-QmK"/>
+                        <outlet property="lblRabies" destination="nxE-42-5cG" id="dIb-1d-7z0"/>
+                        <outlet property="lblTriple" destination="TbH-d0-O8k" id="nki-pv-8UD"/>
+                        <outlet property="tvDetails" destination="ZdQ-r1-lw7" id="caM-Cf-p9K"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OoA-JV-Agb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="270"/>
         </scene>
         <!--Filter View Controller - 篩選-->
         <scene sceneID="BaE-p2-FYl">
@@ -485,7 +742,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg3-XK-fWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="-390"/>
+            <point key="canvasLocation" x="1392" y="-390"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bzu-VK-oEL">
@@ -693,7 +950,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4J-Dk-GpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485" y="980"/>
+            <point key="canvasLocation" x="485" y="968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QId-rU-auP">
@@ -713,7 +970,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Daq-gm-3xv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="980"/>
+            <point key="canvasLocation" x="28" y="968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2zp-ga-gwL">
@@ -736,6 +993,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checked_checkbox.png" width="26" height="26"/>
+        <image name="unchecked_checkbox.png" width="26" height="26"/>
         <image name="z01.jpg" width="308" height="220"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

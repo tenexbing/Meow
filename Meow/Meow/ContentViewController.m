@@ -14,7 +14,7 @@
 
 @implementation ContentViewController
 
-@synthesize sclBanner,pgcBanner,bannerArray;
+@synthesize sclBanner,pgcBanner,bannerArray, btnContact;
 
 
 -(void)viewDidLayoutSubviews
@@ -52,5 +52,14 @@
     int page = floor((self.sclBanner.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     self.pgcBanner.currentPage = page;
 }
+
+- (IBAction)displayActionSheet:(id)sender
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"聯絡方式" delegate:self cancelButtonTitle:@"Cancel Button" destructiveButtonTitle:nil otherButtonTitles:@"電話:0978578978", @"LINE ID:Meow658", @"連結至Facebook", nil];
+    
+    actionSheet.actionSheetStyle = UIActionSheetStyleDefault; [actionSheet showInView:self.view];
+}
+
+
 
 @end

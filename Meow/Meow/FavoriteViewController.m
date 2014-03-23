@@ -32,4 +32,6 @@
     FavoriteCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     return cell;
 }
+
+
 @end
