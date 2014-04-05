@@ -18,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setStyle];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -39,5 +40,22 @@
     return cell;
 }
 
+#pragma mark - setStyle
+
+- (void)setStyle
+{
+    self.view.backgroundColor = [UIColor colorWithRed:0.246 green:0.657 blue:0.646 alpha:1.000];
+    self.tblMain.backgroundColor = [UIColor colorWithRed:0.246 green:0.657 blue:0.646 alpha:1.000];
+    
+    [self.btnFilter setImage:[UIImage imageNamed:@"iconFilter"] forState:UIControlStateNormal];
+    self.btnFilter.titleLabel.text = nil;
+    
+    self.viewWrapSegm.backgroundColor = [UIColor colorWithRed:0.975 green:0.971 blue:0.946 alpha:1.000];
+    UIColor *segmColr = [UIColor colorWithRed:0.802 green:0.796 blue:0.701 alpha:1.000];
+    self.segmSort.tintColor = segmColr;
+    [self.segmSort setTitleTextAttributes:@{NSForegroundColorAttributeName: segmColr,
+                                           NSFontAttributeName: [UIFont boldSystemFontOfSize:14.0]} forState:UIControlStateNormal];
+    
+}
 
 @end

@@ -13,9 +13,60 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [self Theme];
     return YES;
 }
-							
+
+#pragma mark - Theme
+-(void)Theme
+{
+
+    // Navigation backgroung Color
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.313 green:0.734 blue:0.727 alpha:1.000]];
+    
+    // Navightaiton Title Style
+    NSDictionary *titleAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithRed:0.974 green:0.899 blue:0.789 alpha:1.000]};
+    [[UINavigationBar appearance] setTitleTextAttributes:titleAttributes];
+    
+    // Navightaiton BackButton Hide Title
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -64) forBarMetrics:UIBarMetricsDefault];
+    
+    //NavigationBar BackButton Images
+    int imageSize = 44;
+    UIImage *backButton = [[UIImage imageNamed:@"iconBack.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, imageSize, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButton
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    
+    // StatusBar Style
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    // Assign tab bar item with titles
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+
+    // Push title out of content
+    tabBarItem1.titlePositionAdjustment = UIOffsetMake(0.f, 50.f);
+    tabBarItem2.titlePositionAdjustment = UIOffsetMake(0.f, 50.f);
+    tabBarItem3.titlePositionAdjustment = UIOffsetMake(0.f, 50.f);
+    
+    // Tab icon
+    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"tabHome_S"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabHome"]];
+    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"tabFavorite_S"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabFavorite"]];
+    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"tabMore_S"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabMore"]];
+    
+    // Tab bar Style
+    UIImage* tabBarBackground = [UIImage imageNamed:@"tabBg"];
+    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabBg_H"]];
+
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

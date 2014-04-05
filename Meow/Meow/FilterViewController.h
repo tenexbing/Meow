@@ -25,6 +25,5 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *sclContent;
 
-@property (strong, nonatomic)          NSArray *cityArray;
 
 @end

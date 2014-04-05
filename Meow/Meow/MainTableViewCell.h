@@ -9,12 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface MainTableViewCell : UITableViewCell
+{
+    
+    BOOL myFavorite;
+    
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgPic;
-@property (weak, nonatomic) IBOutlet UIButton *btnAddFavorite;
+@property (retain, nonatomic) IBOutlet UIButton *btnAddFavorite;
 @property (weak, nonatomic) IBOutlet UILabel *lblName;
 @property (weak, nonatomic) IBOutlet UILabel *lblSex;
 @property (weak, nonatomic) IBOutlet UILabel *lblAge;
 @property (weak, nonatomic) IBOutlet UILabel *lblLocation;
+
+- (IBAction)addFavorite:(id)sender;
 
 @end
