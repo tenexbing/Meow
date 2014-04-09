@@ -25,5 +25,16 @@
 
 @property (strong, nonatomic) IBOutlet UIScrollView *sclContent;
 
+@property (weak, nonatomic) IBOutlet UIView *viewCity;
+@property (weak, nonatomic) IBOutlet UIView *viewPattern;
+@property (weak, nonatomic) IBOutlet UIView *viewAge;
+@property (weak, nonatomic) IBOutlet UIView *viewSex;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblCity;
+@property (weak, nonatomic) IBOutlet UILabel *lblPattern;
+@property (weak, nonatomic) IBOutlet UILabel *lblAge;
+@property (weak, nonatomic) IBOutlet UILabel *lblSex;
+
+
 
 @end

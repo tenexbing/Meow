@@ -25,6 +25,7 @@
 		0132B44D18F06998004BDA08 /* tabHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0132B44718F06998004BDA08 /* tabHome@2x.png */; };
 		0132B44E18F06998004BDA08 /* tabMore_S@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0132B44818F06998004BDA08 /* tabMore_S@2x.png */; };
 		0132B44F18F06998004BDA08 /* tabMore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0132B44918F06998004BDA08 /* tabMore@2x.png */; };
+		013B79C018F5AE5F008AC335 /* SegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 013B79BF18F5AE5F008AC335 /* SegmentedControl.m */; };
 		017BEFEE18D741C8007ECEB4 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BEFED18D741C8007ECEB4 /* FilterViewController.m */; };
 		019F332718D487AD0011119A /* z02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 019F332518D487AD0011119A /* z02.jpg */; };
 		019F332818D487AD0011119A /* z03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 019F332618D487AD0011119A /* z03.jpg */; };
@@ -86,6 +87,8 @@
 		0132B44718F06998004BDA08 /* tabHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabHome@2x.png"; sourceTree = "<group>"; };
 		0132B44818F06998004BDA08 /* tabMore_S@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabMore_S@2x.png"; sourceTree = "<group>"; };
 		0132B44918F06998004BDA08 /* tabMore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabMore@2x.png"; sourceTree = "<group>"; };
+		013B79BE18F5AE5F008AC335 /* SegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControl.h; sourceTree = "<group>"; };
+		013B79BF18F5AE5F008AC335 /* SegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControl.m; sourceTree = "<group>"; };
 		017BEFEC18D741C8007ECEB4 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		017BEFED18D741C8007ECEB4 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		019F332518D487AD0011119A /* z02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z02.jpg; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 		0132B43118F04F68004BDA08 /* styleSubClass */ = {
 			isa = PBXGroup;
 			children = (
+				013B79BE18F5AE5F008AC335 /* SegmentedControl.h */,
+				013B79BF18F5AE5F008AC335 /* SegmentedControl.m */,
 				0132B43518F0539C004BDA08 /* LabelSmall.h */,
 				0132B43618F0539C004BDA08 /* LabelSmall.m */,
 				0132B43218F04F7A004BDA08 /* NavigationBar.h */,
@@ -398,6 +403,7 @@
 				01C7193018D0CD4D001C6B0A /* MoreTableViewController.m in Sources */,
 				017BEFEE18D741C8007ECEB4 /* FilterViewController.m in Sources */,
 				01C7192A18D0C67A001C6B0A /* FavoriteCollectionViewCell.m in Sources */,
+				013B79C018F5AE5F008AC335 /* SegmentedControl.m in Sources */,
 				01C7192718D0C4DD001C6B0A /* FavoriteViewController.m in Sources */,
 				01F0A18418C9798A000691A1 /* AppDelegate.m in Sources */,
 				01EDC6F018D41C7800A03C4A /* ContentViewController.m in Sources */,

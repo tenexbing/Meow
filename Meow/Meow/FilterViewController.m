@@ -26,6 +26,8 @@
 {
     [super viewDidLoad];
     
+    [self setStyle];
+    
     [picker setHidden:YES];
     
     patternArray = [[NSArray alloc] initWithObjects:@"Appetizers",@"Breakfast",@"Dessert",@"Drinks",
@@ -118,5 +120,40 @@
     self.picker.hidden = YES;
     variabla = 0;
 }
+
+
+#pragma mark - setStyle
+
+- (void)setStyle
+{
+    self.view.backgroundColor = [UIColor colorWithRed:0.902 green:0.898 blue:0.867 alpha:1.000];
+    
+    self.sclContent.backgroundColor = [UIColor clearColor];
+    
+    UIColor *wrapViewColor = [UIColor colorWithRed:1.000 green:1.000 blue:1.000 alpha:1.000];
+    
+    self.viewCity.backgroundColor = wrapViewColor;
+    self.viewPattern.backgroundColor = wrapViewColor;
+    self.viewAge.backgroundColor = wrapViewColor;
+    self.viewSex.backgroundColor = wrapViewColor;
+    
+    UIColor *textColor = [UIColor colorWithRed:0.246 green:0.657 blue:0.646 alpha:1.000];
+    
+    self.lblCity.textColor = textColor;
+    self.lblPattern.textColor = textColor;
+    self.lblAge.textColor = textColor;
+    self.lblSex.textColor = textColor;
+    
+    UIColor *tfColor = [UIColor colorWithRed:0.941 green:0.937 blue:0.922 alpha:1.000];
+    
+    self.tfCity.backgroundColor = tfColor;
+    self.tfPattern.backgroundColor = tfColor;
+    
+    UIColor *tfText = [UIColor colorWithRed:0.722 green:0.714 blue:0.639 alpha:1.000];
+    
+    self.tfCity.textColor = tfText;
+    self.tfPattern.textColor = tfText;
+}
+
 
 @end

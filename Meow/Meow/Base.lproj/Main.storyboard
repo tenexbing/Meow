@@ -102,8 +102,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XZg-LZ-mLa" userLabel="segmSort - Bar Segmented Control">
-                                            <rect key="frame" x="16" y="8" width="288" height="29"/>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XZg-LZ-mLa" userLabel="segmSort - Bar Segmented Control" customClass="SegmentedControl">
+                                            <rect key="frame" x="10" y="8" width="300" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="由新到舊排序"/>
@@ -647,69 +647,97 @@
                                 </connections>
                             </pickerView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="fII-ne-fdt">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="335"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地區" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VsD-0v-epV">
-                                        <rect key="frame" x="12" y="242" width="34" height="44"/>
+                                    <view contentMode="scaleToFill" id="7uN-s7-y5Z">
+                                        <rect key="frame" x="0.0" y="276" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花色" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1s2-un-D6f">
-                                        <rect key="frame" x="12" y="160" width="34" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地區" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VsD-0v-epV">
+                                                <rect key="frame" x="10" y="4" width="34" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="未選擇" minimumFontSize="17" id="0ZP-NK-INQ">
+                                                <rect key="frame" x="10" y="29" width="300" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GPD-Ca-7BQ" id="4w4-Ub-9ok"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="ckW-Iu-aP8">
+                                        <rect key="frame" x="0.0" y="190" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="sds-pp-nBT" userLabel="segmAge - Plain Segmented Control">
-                                        <rect key="frame" x="12" y="124" width="280" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花色" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1s2-un-D6f">
+                                                <rect key="frame" x="10" y="4" width="34" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="未選擇" minimumFontSize="17" id="xr9-rm-Onr">
+                                                <rect key="frame" x="10" y="29" width="300" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GPD-Ca-7BQ" id="VDq-R2-yFh"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="seQ-ew-Kqt">
+                                        <rect key="frame" x="0.0" y="104" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="不限"/>
-                                            <segment title="成貓"/>
-                                            <segment title="幼貓"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年齡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U5v-lB-ejj">
-                                        <rect key="frame" x="12" y="80" width="34" height="44"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="sds-pp-nBT" userLabel="segmAge - Plain Segmented Control" customClass="SegmentedControl">
+                                                <rect key="frame" x="10" y="30" width="300" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="不限"/>
+                                                    <segment title="成貓"/>
+                                                    <segment title="幼貓"/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年齡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U5v-lB-ejj">
+                                                <rect key="frame" x="10" y="4" width="34" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="gSv-ak-Tp8">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="W1m-TL-Iuo" userLabel="segmSex - Plain Segmented Control">
-                                        <rect key="frame" x="12" y="44" width="280" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="不限"/>
-                                            <segment title="公"/>
-                                            <segment title="母"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性別" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nAA-so-rtH">
-                                        <rect key="frame" x="12" y="0.0" width="34" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="未選擇" minimumFontSize="17" id="xr9-rm-Onr">
-                                        <rect key="frame" x="12" y="204" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="GPD-Ca-7BQ" id="VDq-R2-yFh"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="未選擇" minimumFontSize="17" id="0ZP-NK-INQ">
-                                        <rect key="frame" x="12" y="285" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="GPD-Ca-7BQ" id="4w4-Ub-9ok"/>
-                                        </connections>
-                                    </textField>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性別" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nAA-so-rtH">
+                                                <rect key="frame" x="10" y="4" width="34" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="W1m-TL-Iuo" userLabel="segmSex - Plain Segmented Control" customClass="SegmentedControl">
+                                                <rect key="frame" x="10" y="30" width="300" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="不限"/>
+                                                    <segment title="公"/>
+                                                    <segment title="母"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -737,12 +765,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="lblAge" destination="U5v-lB-ejj" id="RK9-9c-IB3"/>
+                        <outlet property="lblCity" destination="VsD-0v-epV" id="IJB-KS-ahj"/>
+                        <outlet property="lblPattern" destination="1s2-un-D6f" id="8Wr-qK-eIm"/>
+                        <outlet property="lblSex" destination="nAA-so-rtH" id="F0C-X2-UYn"/>
                         <outlet property="picker" destination="uu6-aq-R2k" id="2ko-yK-kXP"/>
                         <outlet property="sclContent" destination="fII-ne-fdt" id="Mo1-Hp-dJj"/>
                         <outlet property="segmAge" destination="sds-pp-nBT" id="JjY-3x-q8h"/>
                         <outlet property="segmSex" destination="W1m-TL-Iuo" id="HY1-Ed-tmy"/>
                         <outlet property="tfCity" destination="0ZP-NK-INQ" id="03l-tF-Bn4"/>
                         <outlet property="tfPattern" destination="xr9-rm-Onr" id="UgF-Gx-wWx"/>
+                        <outlet property="viewAge" destination="seQ-ew-Kqt" id="h0o-x7-XSy"/>
+                        <outlet property="viewCity" destination="7uN-s7-y5Z" id="V5W-xF-FyO"/>
+                        <outlet property="viewPattern" destination="ckW-Iu-aP8" id="VSH-9O-K66"/>
+                        <outlet property="viewSex" destination="gSv-ak-Tp8" id="DSa-Ox-Dc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg3-XK-fWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
