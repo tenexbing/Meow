@@ -17,44 +17,38 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VgK-xn-Iml">
-                                    <size key="itemSize" width="145" height="184"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="VgK-xn-Iml">
+                                    <size key="itemSize" width="147" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Q4M-Ww-VD3" customClass="FavoriteCollectionViewCell">
-                                        <rect key="frame" x="10" y="10" width="145" height="184"/>
+                                        <rect key="frame" x="8" y="8" width="147" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="145" height="184"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="147" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="z01.jpg" id="D5R-Mn-AhB" userLabel="imgPic - Image View">
-                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="121"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="太麻里金針花前帥氣無敵小霸王喵伯通" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KNB-is-fWS" userLabel="lblName - Label">
-                                                    <rect key="frame" x="8" y="122" width="128" height="28"/>
+                                                    <rect key="frame" x="8" y="112" width="128" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.31372550129890442" green="0.73725491762161255" blue="0.73333334922790527" alpha="1" colorSpace="deviceRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公公" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BNM-i8-v6x" userLabel="lblSex - Label">
-                                                    <rect key="frame" x="8" y="158" width="47" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="太麻里鄉" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o2I-9H-Tlg" userLabel="lblLoaction - Label">
+                                                    <rect key="frame" x="8" y="135" width="128" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.72156864404678345" green="0.70980393886566162" blue="0.64313727617263794" alpha="1" colorSpace="deviceRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="太麻里鄉" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o2I-9H-Tlg" userLabel="lblLoaction - Label">
-                                                    <rect key="frame" x="40" y="158" width="97" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="z03.jpg" id="D5R-Mn-AhB" userLabel="imgPic - Image View">
+                                                    <rect key="frame" x="4" y="4" width="137" height="107"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -63,7 +57,6 @@
                                             <outlet property="imgPic" destination="D5R-Mn-AhB" id="z2T-7l-a7S"/>
                                             <outlet property="lblLocation" destination="o2I-9H-Tlg" id="sTN-vV-pre"/>
                                             <outlet property="lblName" destination="KNB-is-fWS" id="giX-af-3Bp"/>
-                                            <outlet property="lblSex" destination="BNM-i8-v6x" id="5yq-gH-hr3"/>
                                             <segue destination="e1Q-JR-QQ0" kind="push" identifier="showDetail" id="Jrw-Sl-iE7"/>
                                         </connections>
                                     </collectionViewCell>
@@ -650,7 +643,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="7uN-s7-y5Z">
+                                    <view contentMode="scaleToFill" id="7uN-s7-y5Z" userLabel="viewCity - View">
                                         <rect key="frame" x="0.0" y="276" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -672,7 +665,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="ckW-Iu-aP8">
+                                    <view contentMode="scaleToFill" id="ckW-Iu-aP8" userLabel="viewPattern - View">
                                         <rect key="frame" x="0.0" y="190" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -694,7 +687,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="seQ-ew-Kqt">
+                                    <view contentMode="scaleToFill" id="seQ-ew-Kqt" userLabel="viewAge - View">
                                         <rect key="frame" x="0.0" y="104" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -716,7 +709,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="gSv-ak-Tp8">
+                                    <view contentMode="scaleToFill" id="gSv-ak-Tp8" userLabel="viewSex - View">
                                         <rect key="frame" x="0.0" y="20" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -1037,6 +1030,7 @@
         <image name="checked_checkbox.png" width="26" height="26"/>
         <image name="unchecked_checkbox.png" width="26" height="26"/>
         <image name="z01.jpg" width="308" height="220"/>
+        <image name="z03.jpg" width="352" height="220"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1044,6 +1038,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="m5V-bu-nNm"/>
+        <segue reference="Jrw-Sl-iE7"/>
     </inferredMetricsTieBreakers>
 </document>

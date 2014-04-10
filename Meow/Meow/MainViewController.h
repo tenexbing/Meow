@@ -10,9 +10,9 @@
 
 @interface MainViewController : UIViewController<UITabBarDelegate, UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *btnFilter;
+@property (weak, nonatomic) IBOutlet UIButton           *btnFilter;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmSort;
-@property (weak, nonatomic) IBOutlet UIView *viewWrapSegm;
-@property (weak, nonatomic) IBOutlet UITableView *tblMain;
+@property (weak, nonatomic) IBOutlet UIView             *viewWrapSegm;
+@property (weak, nonatomic) IBOutlet UITableView        *tblMain;
 
 @end

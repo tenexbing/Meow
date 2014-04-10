@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgPic;
 @property (weak, nonatomic) IBOutlet UILabel *lblName;
-@property (weak, nonatomic) IBOutlet UILabel *lblSex;
 @property (weak, nonatomic) IBOutlet UILabel *lblLocation;
 
 @end

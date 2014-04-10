@@ -15,12 +15,12 @@
     
 }
 
-@property (weak, nonatomic) IBOutlet UIImageView *imgPic;
-@property (retain, nonatomic) IBOutlet UIButton *btnAddFavorite;
-@property (weak, nonatomic) IBOutlet UILabel *lblName;
-@property (weak, nonatomic) IBOutlet UILabel *lblSex;
-@property (weak, nonatomic) IBOutlet UILabel *lblAge;
-@property (weak, nonatomic) IBOutlet UILabel *lblLocation;
+@property (weak, nonatomic  ) IBOutlet UIImageView *imgPic;
+@property (retain, nonatomic) IBOutlet UIButton    *btnAddFavorite;
+@property (weak, nonatomic  ) IBOutlet UILabel     *lblName;
+@property (weak, nonatomic  ) IBOutlet UILabel     *lblSex;
+@property (weak, nonatomic  ) IBOutlet UILabel     *lblAge;
+@property (weak, nonatomic  ) IBOutlet UILabel     *lblLocation;
 
 - (IBAction)addFavorite:(id)sender;
 

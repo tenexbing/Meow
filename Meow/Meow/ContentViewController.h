@@ -10,29 +10,29 @@
 
 @interface ContentViewController : UIViewController<UIScrollViewDelegate, UIActionSheetDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *sclWrap;
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UIScrollView *sclBanner;
+@property (weak, nonatomic  ) IBOutlet UIScrollView  *sclWrap;
+@property (weak, nonatomic  ) IBOutlet UIView        *contentView;
+@property (weak, nonatomic  ) IBOutlet UIScrollView  *sclBanner;
 @property (strong, nonatomic) IBOutlet UIPageControl *pgcBanner;
 
-@property (strong, nonatomic) IBOutlet UIImageView *imgBanner;
+@property (strong, nonatomic) IBOutlet UIImageView   *imgBanner;
 
-@property (weak, nonatomic) IBOutlet UIButton *btnFavorite;
-@property (weak, nonatomic) IBOutlet UILabel *lblName;
+@property (weak, nonatomic  ) IBOutlet UIButton      *btnFavorite;
+@property (weak, nonatomic  ) IBOutlet UILabel       *lblName;
 
-@property (weak, nonatomic) IBOutlet UILabel *lblSex;
-@property (weak, nonatomic) IBOutlet UILabel *lblAge;
-@property (weak, nonatomic) IBOutlet UILabel *lblLoaction;
+@property (weak, nonatomic  ) IBOutlet UILabel       *lblSex;
+@property (weak, nonatomic  ) IBOutlet UILabel       *lblAge;
+@property (weak, nonatomic  ) IBOutlet UILabel       *lblLoaction;
 
-@property (weak, nonatomic) IBOutlet UITextView *tvPersonality;
+@property (weak, nonatomic  ) IBOutlet UITextView    *tvPersonality;
 
-@property (strong, nonatomic) IBOutlet UIButton *btnContact;
-@property (weak, nonatomic) IBOutlet UIButton *btnMedical;
-@property (weak, nonatomic) IBOutlet UIButton *btnMore;
+@property (strong, nonatomic) IBOutlet UIButton      *btnContact;
+@property (weak, nonatomic  ) IBOutlet UIButton      *btnMedical;
+@property (weak, nonatomic  ) IBOutlet UIButton      *btnMore;
 
-@property (weak, nonatomic) IBOutlet UIButton *btnFeedback;
+@property (weak, nonatomic  ) IBOutlet UIButton      *btnFeedback;
 
-@property (nonatomic, strong) NSArray *bannerArray;
+@property (nonatomic, strong) NSArray       *bannerArray;
 
 - (IBAction)displayActionSheet:(id)sender;
 
