@@ -25,7 +25,6 @@
     
     if (self) {
         
-        self.font = [UIFont boldSystemFontOfSize:14.0];
         self.textColor = [UIColor colorWithRed:0.665 green:0.658 blue:0.577 alpha:1.000];
     }
     
