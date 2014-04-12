@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ContentViewController : UIViewController<UIScrollViewDelegate, UIActionSheetDelegate>
+{
+    
+    BOOL myFavorite;
+    
+}
 
 @property (weak, nonatomic  ) IBOutlet UIScrollView  *sclWrap;
 @property (weak, nonatomic  ) IBOutlet UIView        *contentView;

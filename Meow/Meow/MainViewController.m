@@ -51,7 +51,6 @@
     self.btnFilter.titleLabel.text = nil;
     
     self.viewWrapSegm.backgroundColor = [UIColor colorWithRed:0.975 green:0.971 blue:0.946 alpha:1.000];
-
     
 }
 
