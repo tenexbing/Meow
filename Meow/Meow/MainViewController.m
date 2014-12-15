@@ -57,6 +57,7 @@
     cell.lblAge.text=[[tableData objectAtIndex:indexPath.row] objectForKey:@"Age"];
     
     
+    
     NSString *picPath=[NSString stringWithFormat:@"%@%@",@"http://yali.somee.com/pic/" ,[[tableData objectAtIndex:indexPath.row] objectForKey:@"PicPath"]];
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:picPath]];
     //預設圖片
