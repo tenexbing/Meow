@@ -9,7 +9,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MainTableViewCell.h"
 
-
 @implementation MainTableViewCell
 
 @synthesize btnAddFavorite;

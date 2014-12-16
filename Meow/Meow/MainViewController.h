@@ -7,16 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WebserviceClass.h"
-
 
 @interface MainViewController : UIViewController<UITabBarDelegate, UITableViewDataSource, UITableViewDelegate>
-{
-    WebserviceClass *webservice;
-    //Table資料
-    NSMutableArray *tableData;
-
-}
 
 @property (weak, nonatomic) IBOutlet UIButton           *btnFilter;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmSort;
